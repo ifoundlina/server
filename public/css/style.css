@@ -1,0 +1,341 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/**
+* HTML5 display-role reset for older browsers
+*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style-type:disc;
+  line-height: 150%;
+  display: block;
+  font-family: 'Unna', serif;
+  color: #545454;
+}
+/**
+* End of Reset
+*/
+/**
+* Start of Custom Styles
+*/
+
+body {
+  /*background-color: LightGray;*/
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+  width:100%;
+}
+
+
+p  {
+  line-height: 140%;
+  display: block;
+  font-family: 'Unna', serif;
+  color: #545454;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000066;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #20B2AA;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.content {
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
+}
+
+/**
+* Navigation Section
+*/
+.top-navigation {
+  background-color: #000000;
+  position: fixed;
+  width: 110%;
+  /*z-index: 9999;*/
+}
+
+.nav ul {
+  float: right;
+	display: -webkit-flex;
+	-webkit-flex-direction: flow;
+	-webkit-justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	/*position: fixed;*/
+}
+
+.top-navigation .links  a {
+  float: right;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+}
+.top-navigation .links li {
+  display: inline-block;
+  float: right;
+  padding-left: 50px;
+  /*margin-left: 1.563rem;*/
+}
+
+.top-navigation a:hover {
+color: #00e5e6;
+}
+
+
+
+/**
+* Introduction Section
+*/
+.introduction {
+  background-image: url('../images/wyn.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+  overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+  font: 'Roboto Condensed', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px #202020;
+
+}
+.introduction h1 {
+  font-size: 4rem;
+  margin-top: 18rem;
+  font-weight: 700;
+}
+.introduction h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+/**
+* About Section
+*/
+
+.about {
+  height: 18rem;
+}
+
+.about_me h4 {
+  padding-bottom: 40px;
+}
+
+
+.bold {
+  font-weight: 600;
+}
+
+.about_me {
+  width: 960px;
+  padding-top: 10rem;
+  margin: auto;
+  border-bottom: dotted;
+  border-bottom-color: #FECB00;
+  height: 600px;
+  font-size: 1em;
+}
+
+.picture {
+  width: 200px;
+  height: 350px;
+  float: left;
+  border-right-color: #FECB00;
+}
+
+.about_me_text {
+  height: 450px;
+  width: 700px;
+  float: left;
+  padding-left: 80px;
+}
+
+/**
+* Education Section
+*/
+.education {
+  width: 960px;
+  padding-top: 9rem;
+  margin: auto;
+  border-bottom: dotted;
+  border-bottom-color: #FECB00;
+  height: 620px;
+  font-size: 1em;
+}
+
+.left-box {
+  width: 350px;
+  float: left;
+  /*border-right: dotted;*/
+  border-right-color: #FECB00;
+}
+
+.right-box {
+  height: 300px;
+  width: 600px;
+  float: left;
+  padding-left: 125px;
+}
+
+
+.clear {
+  clear:both;
+}
+
+/**
+* experience Section
+*/
+
+.experience {
+  width: 960px;
+  padding-top: 6rem;
+  margin: auto;
+  height: 875px;
+}
+.job-box {
+  width: 960px;
+  margin: auto;
+  height: 120px;
+  margin-bottom: 3px;
+}
+
+.title {
+  width: 350px;
+  height: 120px;
+  float: left;
+  border-right: dotted;
+  border-right-color: #FECB00;
+}
+
+.description {
+  width: 600px;
+  font-size: 1em;
+  padding-left: 125px;
+  float: left;
+}
+
+/**
+* Footer Section
+*/
+
+
+.social > li {
+  display: inline-block;
+  color: #FFFFFF;
+}
+.social a {
+  color: #FFFFFF;
+}
+
+.white  {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #FFFFFF;
+
+}
+
+.footer  {
+  font-size: 1em;
+  text-align: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  background-color: #DC143C;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+color: #00e5e6;
+}
+
+.search:active:before, .clear:active:before {
+  color: white;
+}
+
+
+/**
+* Responsive Design
+*/
+@media (min-width: 48rem) {
+  .content
+
+  {
+    width: 46rem;
+  }
+}
+@media (min-width: 62rem) {
+  .content {
+    width: 60rem;
+  }
+}
+@media (min-width: 75rem) {
+  .content {
+    width: 60%;
+  }
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+  0%, 100% {margin-top: 0px;}
+  50% {margin-top: 2rem;}
+}
+/* Standard syntax */
+@keyframes bounce {
+  0%, 100% {margin-top: 0px;}
+  50% {margin-top: 2rem;}
+}
